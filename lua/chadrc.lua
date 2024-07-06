@@ -90,7 +90,7 @@ M.ui = {
             -- link = "@comment",
         },
         LineNr = {
-            fg = { "grey_fg", 6 },
+            fg = { "grey_fg", 12 },
         },
     },
     lsp_semantic_tokens = true,

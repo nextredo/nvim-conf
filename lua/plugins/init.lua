@@ -1,6 +1,4 @@
 -- From https://nvchad.com/docs/config/plugins
--- These values here extend the defaults from nvchad in
--- its mason package, under lua/nvchad/plugins/init.lua
 
 local plugins = {
 
@@ -30,23 +28,36 @@ local plugins = {
         additional_vim_regex_highlighting = false,
       },
       ensure_installed = {
-        -- misc
+        -- misc / docs
         "vim", "vimdoc",
         "markdown",
         "regex",
 
         -- config
-        "dockerfile", "yaml",
-        "json",
+        "dockerfile",
+        "json", "ini", "yaml",
 
         -- git
-        "git_config", "git_rebase", "gitattributes", "gitignore",
+        "git_config", "git_rebase",
+        "gitattributes", "gitignore",
+        "gitcommit",
 
-        -- languages
-        -- "html", "css",
-        "lua",
+        -- web
+        "html", "css",
+
+        -- system
         "bash",
+
+        -- embedded
+        "lua",
         "c", "cpp",
+        "llvm",
+
+        -- language support
+        "comment",
+        "doxygen",
+        "printf"
+        -- "arduino",
         -- "rust",
 
         -- go

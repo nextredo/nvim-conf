@@ -33,7 +33,9 @@ vim.cmd([[
 
 vim.cmd("source ~/.vimrc")
 
-vim.cmd([[ colorscheme ron ]])
+-- Good: Desert, evening, slate, sorbet
+-- Ok: Zaibatsu
+vim.cmd([[ colorscheme retrobox ]])
 
 -- Clear extra whitespace on save
 -- Moves cursor :(

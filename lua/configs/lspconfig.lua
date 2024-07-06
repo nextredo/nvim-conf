@@ -65,6 +65,7 @@ lspconfig.clangd.setup {
         "--all-scopes-completion",
         "--completion-style=bundled",
         "--header-insertion=never",
+        "--limit-references=0",
         "-j=8",
 
         -- Debug

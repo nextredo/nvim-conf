@@ -12,4 +12,32 @@ local map = vim.keymap.set
 
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 
+-- Toggle LSP diagnostic warnings
+map("n", "<leader>dr",
+    function()
+        vim.diagnostic.enable(not vim.diagnostic.is_enabled);
+    end
+)
+
+-- Fix CTRL-I mapping (linked to <Tab> mapping, see :h CTRL-I)
+-- Since terminal interprets CTRL-I as tab, and sends the tab character
+vim.keymap.del("n", "<Tab>")
+vim.keymap.del("n", "<S-Tab>")
+
+-- New buffer next & buffer prev mappings
+-- map("n", "<leader>k", "<Cmd>bnext<CR>")
+-- map("n", "<leader>j", "<Cmd>bprev<CR>")
+
+-- map("n", "`", "<Cmd>bnext<CR>")
+-- map("n", "~", "<Cmd>bprev<CR>")
+
+-- From NvChad mappings.lua
+map("n", "<leader>k", function()
+  require("nvchad.tabufline").next()
+end, { desc = "buffer goto next" })
+
+map("n", "<leader>j", function()
+  require("nvchad.tabufline").prev()
+end, { desc = "buffer goto prev" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
