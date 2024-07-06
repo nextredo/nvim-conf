@@ -1,7 +1,5 @@
 require "nvchad.mappings"
 
--- add yours here
-
 local map = vim.keymap.set
 
 -- This breaks f backward and forward use
@@ -24,13 +22,6 @@ map("n", "<leader>dr",
 vim.keymap.del("n", "<Tab>")
 vim.keymap.del("n", "<S-Tab>")
 
--- New buffer next & buffer prev mappings
--- map("n", "<leader>k", "<Cmd>bnext<CR>")
--- map("n", "<leader>j", "<Cmd>bprev<CR>")
-
--- map("n", "`", "<Cmd>bnext<CR>")
--- map("n", "~", "<Cmd>bprev<CR>")
-
 -- From NvChad mappings.lua
 map("n", "<leader>k", function()
   require("nvchad.tabufline").next()
@@ -39,5 +30,3 @@ end, { desc = "buffer goto next" })
 map("n", "<leader>j", function()
   require("nvchad.tabufline").prev()
 end, { desc = "buffer goto prev" })
-
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

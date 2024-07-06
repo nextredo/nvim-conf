@@ -1,4 +1,6 @@
 -- From https://nvchad.com/docs/config/plugins
+-- These values here extend the defaults from nvchad in
+-- its mason package, under lua/nvchad/plugins/init.lua
 
 local plugins = {
 
@@ -17,7 +19,6 @@ local plugins = {
   --   end,
   -- },
 
-  -- this opts will extend the default opts
   {
     "nvim-treesitter/nvim-treesitter",
     lazy = false,
@@ -52,20 +53,20 @@ local plugins = {
         "lua",
         "c", "cpp",
         "llvm",
+        "arduino",
+        "rust",
 
         -- language support
         "comment",
         "doxygen",
-        "printf"
-        -- "arduino",
-        -- "rust",
+        "printf",
 
         -- go
-        -- "go",
-        -- "gomod",
-        -- "gosum",
-        -- "gowork",
-        -- "gotmpl",
+        "go",
+        "gomod",
+        "gosum",
+        "gowork",
+        "gotmpl",
       },
     },
   },
@@ -87,34 +88,14 @@ local plugins = {
     opts = {
       ensure_installed = {
         "lua-language-server", "stylua",
-        -- "html-lsp", "css-lsp" ,  -- "prettier",
+        -- "html-lsp", "css-lsp" ,
+        -- "prettier",
         -- "black",
         "clang-format", "clangd", "cpplint",
       },
     },
   },
 
-
-  -- If your opts uses a function call ex: require*, then make opts spec a function
-  -- should return the modified default config as well
-  -- here we just call the default telescope config
-  -- And edit its mappinsg
-  -- {
-  --   "nvim-telescope/telescope.nvim",
-  --   opts = function()
-  --     local conf = require "nvchad.configs.telescope"
-
-  --     conf.defaults.mappings.i = {
-  --       ["<C-j>"] = require("telescope.actions").move_selection_next,
-  --       ["<Esc>"] = require("telescope.actions").close,
-  --     }
-
-  --    -- or
-  --    -- table.insert(conf.defaults.mappings.i, your table)
-
-  --     return conf
-  --   end,
-  -- }
-}
+} -- plugins table
 
 return plugins
