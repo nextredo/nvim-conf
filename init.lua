@@ -25,6 +25,15 @@ require("lazy").setup({
     end,
   },
 
+  -- todo add extra plugins (if necessary)
+  -- more intelligent comments https://github.com/JoosepAlviste/nvim-ts-context-commentstring
+  -- symbol table plugin (like AstroNvim)
+  -- doxygen comments https://github.com/danymat/neogen
+  -- tempo time tracker?
+  -- spellcheck
+  -- ludicrous: jupyter, excel, pdf
+
+
   { import = "plugins" },
 }, lazy_config)
 

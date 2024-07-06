@@ -4,7 +4,12 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
+-- This breaks f backward and forward use
+-- map("n", ";", ":", { desc = "CMD enter command mode" })
+
+-- This is just unnecessary
+-- map("i", "jk", "<ESC>")
+
+map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
