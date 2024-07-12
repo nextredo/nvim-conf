@@ -47,7 +47,7 @@ end
 
 -- Notes for clangd
 -- Use bear to build a compilation database <https://github.com/rizsotto/Bear>
-    -- make distclean -j$(nproc) && bear -- make -j4
+    -- make distclean -j$(nproc) && bear -- make -j$(nproc)
 lspconfig.clangd.setup {
     on_attach = on_attach,
     on_init = on_init,
