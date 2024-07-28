@@ -96,6 +96,14 @@ local plugins = {
     },
   },
 
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      disable_netrw = false,
+      hijack_netrw  = false,
+    },
+  },
+
 } -- plugins table
 
 return plugins
