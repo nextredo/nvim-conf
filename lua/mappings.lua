@@ -10,6 +10,8 @@ local map = vim.keymap.set
 
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 
+map("n", "<leader>dc", "<Cmd>LspInfo<CR>")
+
 -- Toggle diagnostics
 map("n", "<leader>dr",
     function()

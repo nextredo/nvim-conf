@@ -9,9 +9,16 @@ local lspconfig = require "lspconfig"
 -- WARN: Border override for folke/lazy is elsewhere (configs/lazy.lua)
 local _border = "rounded"
 
+-- Don't think this actually does anything
+vim.diagnostic.config({
+  float = {
+    border = _border,
+  },
+})
+
 -- Override :LspInfo border
-vim.diagnostic.config{
-  float = { border = _border }
+require('lspconfig.ui.windows').default_options = {
+  border = _border
 }
 
 -- Override all LSP settings (regardless of client)
