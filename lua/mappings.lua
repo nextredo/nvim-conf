@@ -2,11 +2,24 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+-- Unmappings ------------------------------------------------------------------
+
 -- This breaks f backward and forward use
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
 
 -- This is just unnecessary
 -- map("i", "jk", "<ESC>")
+
+-- I do this too much accidentally when using nvim inbuilt terminal
+-- Combat default nvchad mapping
+vim.keymap.del("n", "<C-c>")
+
+-- Fix CTRL-I mapping (linked to <Tab> mapping, see :h CTRL-I)
+-- Since terminal interprets CTRL-I as tab, and sends the tab character
+vim.keymap.del("n", "<Tab>")
+vim.keymap.del("n", "<S-Tab>")
+
+-- Mappings --------------------------------------------------------------------
 
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 
@@ -32,16 +45,11 @@ map("n", "<leader>dv",
         local buf_handle = vim.api.nvim_win_get_buf(0)     -- get the buffer handler
 
         vim.api.nvim_buf_set_lines(buf_handle, 0, -1, false, diags_table_str_set)
+
+        vim.cmd("setlocal ro")
     end,
     { desc = "verbose print diagnostics" }
 )
-
-
-
--- Fix CTRL-I mapping (linked to <Tab> mapping, see :h CTRL-I)
--- Since terminal interprets CTRL-I as tab, and sends the tab character
-vim.keymap.del("n", "<Tab>")
-vim.keymap.del("n", "<S-Tab>")
 
 -- From NvChad mappings.lua
 map("n", "<leader>k", function()
