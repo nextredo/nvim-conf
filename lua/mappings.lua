@@ -20,19 +20,29 @@ vim.keymap.del("n", "<Tab>")
 vim.keymap.del("n", "<S-Tab>")
 
 -- Mappings --------------------------------------------------------------------
-
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
-
 map("n", "<leader>dc", "<Cmd>LspInfo<CR>")
 
 -- Toggle diagnostics
 map("n", "<leader>dr",
-    function()
-        vim.diagnostic.enable(not vim.diagnostic.is_enabled());
-    end,
+    function() vim.diagnostic.enable(not vim.diagnostic.is_enabled()); end,
     { desc = "toggle diagnostics" }
 )
 
+map("n", "<leader>dk",
+    function() vim.diagnostic.open_float() end,
+    { desc = "toggle diagnostics" }
+)
+
+-- Navigate diagnostics
+map("n", "<leader>df",
+    function() vim.diagnostic.goto_next() end,
+    { desc = "next diagnostic" }
+)
+map("n", "<leader>db",
+    function() vim.diagnostic.goto_prev() end,
+    { desc = "prev diagnostic" }
+)
 
 -- Print diagnostics (verbose) (so I can see check codes)
 map("n", "<leader>dv",
@@ -47,6 +57,7 @@ map("n", "<leader>dv",
         vim.api.nvim_buf_set_lines(buf_handle, 0, -1, false, diags_table_str_set)
 
         vim.cmd("setlocal ro")
+        vim.cmd(":set filetype=json")
     end,
     { desc = "verbose print diagnostics" }
 )
