@@ -62,6 +62,8 @@ map("n", "<leader>dv",
     { desc = "verbose print diagnostics" }
 )
 
+map("n", "<leader>bc", "<Cmd>Bclose<CR>")
+
 -- From NvChad mappings.lua
 map("n", "<leader>k", function()
   require("nvchad.tabufline").next()

@@ -5,4 +5,4 @@
 # Issue           #29075 <https://github.com/neovim/neovim/issues/29079>
 # <https://github.com/neovim/neovim/>
 
-sudo sed "s/2/'.*'/'\/\/ %s'/" /usr/share/nvim/runtime/ftplugin/c.lua
+sudo sed -i "s/vim.bo.commentstring.*/vim.bo.commentstring = '\/\/ \%s'/" /usr/share/nvim/runtime/ftplugin/c.lua

@@ -41,6 +41,8 @@ local servers = {
     "html",        -- Vscode extracted lang servers
     "cssls",       -- Vscode extracted lang servers
     "tailwindcss", -- Tailwind's intellisense (lots of web files)
+    "docker_compose_language_service",
+    "dockerls",
 }
 
 -- lsps with default config

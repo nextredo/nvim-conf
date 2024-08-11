@@ -101,6 +101,15 @@ local plugins = {
     opts = {
       disable_netrw = false,
       hijack_netrw  = false,
+      view = {
+        width = 30,
+      },
+      update_focused_file = {
+        enable = true,
+        update_root = {
+          enable = true,
+        },
+      },
     },
   },
 
