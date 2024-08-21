@@ -104,6 +104,10 @@ local plugins = {
       view = {
         width = 30,
       },
+      filters = {
+        enable = false,
+        git_ignored = false,
+      },
       update_focused_file = {
         enable = true,
         update_root = {
