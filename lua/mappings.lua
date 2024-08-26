@@ -19,6 +19,9 @@ vim.keymap.del("n", "<C-c>")
 vim.keymap.del("n", "<Tab>")
 vim.keymap.del("n", "<S-Tab>")
 
+-- Not needed
+vim.keymap.del("n", "<leader>b")
+
 -- Mappings --------------------------------------------------------------------
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 map("n", "<leader>dc", "<Cmd>LspInfo<CR>")

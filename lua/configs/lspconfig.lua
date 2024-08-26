@@ -45,6 +45,7 @@ local servers = {
     "nginx_language_server",
     "dockerls",
     "texlab",
+    "pyright",
 }
 
 -- lsps with default config
@@ -101,6 +102,7 @@ lspconfig.clangd.setup {
 
         -- Debug
         "--log=info",
+        -- "--log=verbose",
     },
     single_file_support = true,
 }

@@ -3,7 +3,6 @@
 -- its mason package, under lua/nvchad/plugins/init.lua
 
 local plugins = {
-
   -- {
   --   "stevearc/conform.nvim",
   --   event = 'BufWritePre', -- uncomment for format on save
@@ -71,6 +70,17 @@ local plugins = {
     },
   },
 
+  {
+    "nvim-telescope/telescope.nvim",
+    lazy = false,
+    opts = {
+      pickers = {
+        oldfiles = {
+          cwd_only = true,
+        },
+      },
+    },
+  },
 
   -- https://stackoverflow.com/questions/78552104/how-to-configure-the-angular-language-server-in-nvchad-for-a-nx-monorepo
   {
@@ -80,7 +90,6 @@ local plugins = {
       require "configs.lspconfig"
     end,
   },
-
 
   {
     "williamboman/mason.nvim",
