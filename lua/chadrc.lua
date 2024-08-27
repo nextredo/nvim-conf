@@ -1,4 +1,15 @@
 -- See https://nvchad.com/docs/config/nvchad_ui
+-- TODO update to something sane
+-- "nothing is more permanent than a temporary solution"
+local function script_path()
+   local str = debug.getinfo(2, "S").source:sub(2)
+   return str:match("(.*/)")
+end
+
+local orig_path = package.path
+package.path = script_path() .. "?.lua;" .. package.path
+local ascii_picker = require("custom.ascii_art")
+package.path = orig_path
 
 ---@type ChadrcConfig
 local M = {}
@@ -20,7 +31,7 @@ M.ui = {
 
     nvdash = {
         load_on_startup = true,
-        header = require("lua.custom.ascii_art").get_art(),
+        header = ascii_picker.get_art(),
     },
 
     -- NOTE
