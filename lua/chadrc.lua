@@ -2,8 +2,7 @@
 -- TODO update to something sane
 -- "nothing is more permanent than a temporary solution"
 local function script_path()
-   local str = debug.getinfo(2, "S").source:sub(2)
-   return str:match("(.*/)")
+   return debug.getinfo(1, "S").source:match("@?(.*/)")
 end
 
 local orig_path = package.path
