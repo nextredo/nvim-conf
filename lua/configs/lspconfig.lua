@@ -44,8 +44,12 @@ local servers = {
     "docker_compose_language_service",
     "nginx_language_server",
     "dockerls",
-    "texlab",
+    "digestif",
     "pyright",
+    "nixd",
+    "gdscript",
+    "gdshader_lsp",
+    "gopls",
 }
 
 -- lsps with default config
