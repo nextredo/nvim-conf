@@ -58,6 +58,9 @@ M.ui = {
         LineNr = {
             fg = { "grey_fg", 12 },
         },
+        NvDashButtons = {
+            fg = { "grey_fg", 52 },
+        },
     },
     lsp_semantic_tokens = true,
 
