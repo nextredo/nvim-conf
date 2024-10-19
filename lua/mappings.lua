@@ -34,7 +34,7 @@ map("n", "<leader>dr",
 
 map("n", "<leader>dk",
     function() vim.diagnostic.open_float() end,
-    { desc = "toggle diagnostics" }
+    { desc = "open floating diagnostics" }
 )
 
 -- Navigate diagnostics
