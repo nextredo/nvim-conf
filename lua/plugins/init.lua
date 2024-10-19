@@ -126,6 +126,11 @@ local plugins = {
     },
   },
 
+  {
+    "godlygeek/tabular",
+    lazy = false,
+  },
+
 } -- plugins table
 
 return plugins
