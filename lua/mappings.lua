@@ -23,6 +23,8 @@ vim.keymap.del("n", "<S-Tab>")
 vim.keymap.del("n", "<leader>b")
 
 -- Mappings --------------------------------------------------------------------
+map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>")
+
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 map("n", "<leader>dc", "<Cmd>LspInfo<CR>")
 
