@@ -27,6 +27,8 @@ map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>")
 map("n", "<leader>ph", "<Cmd>Gitsigns preview_hunk<CR>")
 map("n", "<leader>pi", "<Cmd>Gitsigns preview_hunk_inline<CR>")
 map("n", "<leader>rh", "<Cmd>Gitsigns reset_hunk<CR>")
+map("n", "<leader>fh", "<Cmd>Gitsigns next_hunk<CR>")
+map("n", "<leader>bh", "<Cmd>Gitsigns prev_hunk<CR>")
 
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 map("n", "<leader>dc", "<Cmd>LspInfo<CR>")
