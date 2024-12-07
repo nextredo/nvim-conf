@@ -23,6 +23,9 @@ vim.keymap.del("n", "<S-Tab>")
 vim.keymap.del("n", "<leader>b")
 
 -- Mappings --------------------------------------------------------------------
+-- Git time
+-- map("n", "<leader>gs", "<Cmd>Telescope git_stash<CR>")
+
 map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>")
 map("n", "<leader>ph", "<Cmd>Gitsigns preview_hunk<CR>")
 map("n", "<leader>pi", "<Cmd>Gitsigns preview_hunk_inline<CR>")
@@ -40,17 +43,17 @@ map("n", "<leader>dr",
 )
 
 map("n", "<leader>dk",
-    function() vim.diagnostic.open_float() end,
+    function() vim.diagnostic.open_float(); end,
     { desc = "open floating diagnostics" }
 )
 
 -- Navigate diagnostics
 map("n", "<leader>df",
-    function() vim.diagnostic.goto_next() end,
+    function() vim.diagnostic.goto_next(); end,
     { desc = "next diagnostic" }
 )
 map("n", "<leader>db",
-    function() vim.diagnostic.goto_prev() end,
+    function() vim.diagnostic.goto_prev(); end,
     { desc = "prev diagnostic" }
 )
 
