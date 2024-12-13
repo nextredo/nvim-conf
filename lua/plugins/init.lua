@@ -43,7 +43,7 @@ local plugins = {
         "gitcommit",
 
         -- web
-        "html", "css",
+        "html", "css", "javascript",
 
         -- system
         "bash",

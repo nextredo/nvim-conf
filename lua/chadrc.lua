@@ -52,8 +52,8 @@ M = {
 
     ui = {
         statusline = {
-            theme = "minimal",
-            separator_style = "block",
+            theme = "vscode_colored",
+            separator_style = "default",
         },
     },
 
