@@ -25,7 +25,6 @@ vim.keymap.del("n", "<leader>b")
 -- Mappings --------------------------------------------------------------------
 -- Git time
 -- map("n", "<leader>gs", "<Cmd>Telescope git_stash<CR>")
-
 map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>")
 map("n", "<leader>ph", "<Cmd>Gitsigns preview_hunk<CR>")
 map("n", "<leader>pi", "<Cmd>Gitsigns preview_hunk_inline<CR>")
@@ -33,8 +32,12 @@ map("n", "<leader>rh", "<Cmd>Gitsigns reset_hunk<CR>")
 map("n", "<leader>fh", "<Cmd>Gitsigns next_hunk<CR>")
 map("n", "<leader>bh", "<Cmd>Gitsigns prev_hunk<CR>")
 
+-- LSP client time
 map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 map("n", "<leader>dc", "<Cmd>LspInfo<CR>")
+
+-- Tabluarize time
+map("n", "<leader>al", [[<Cmd>Tab /,\zs /l0<CR>]])
 
 -- Toggle diagnostics
 map("n", "<leader>dr",
