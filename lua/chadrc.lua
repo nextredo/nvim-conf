@@ -47,6 +47,11 @@ M = {
             NvDashButtons = {
                 fg = { "grey_fg", 52 },
             },
+            -- To fix currently selected file in the
+            -- "Find Files" pane being indistinguishable
+            TelescopeNormal = {
+                fg = { "grey_fg", 20 },
+            },
         },
     },
 
