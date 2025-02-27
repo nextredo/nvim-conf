@@ -37,7 +37,7 @@ map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>")
 map("n", "<leader>dc", "<Cmd>LspInfo<CR>")
 
 -- Tabluarize time
-map("n", "<leader>al", [[<Cmd>Tab /,\zs /l0<CR>]])
+map("n", "<leader>al", [[<Cmd>Tab /,\zs/l0l1<CR>]])
 
 -- Toggle diagnostics
 map("n", "<leader>dr",
