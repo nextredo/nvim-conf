@@ -35,7 +35,7 @@ end
 
 -- See plugins/init.lua too
 -- Look in the following link for details on setting up server configs teehee
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 local servers = {
     "clangd",      -- Clangd for C & C++
     "html",        -- Vscode extracted lang servers
@@ -47,10 +47,13 @@ local servers = {
     "digestif",
     -- "pyright",
     "basedpyright",
+    "bashls",
     "nixd",
     "gdscript",
     "gdshader_lsp",
     "gopls",
+    "glsl_analyzer",
+    "rust_analyzer",
 }
 
 -- lsps with default config
