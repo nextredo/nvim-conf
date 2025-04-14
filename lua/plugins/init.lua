@@ -3,21 +3,6 @@
 -- its mason package, under lua/nvchad/plugins/init.lua
 
 local plugins = {
-  -- {
-  --   "stevearc/conform.nvim",
-  --   event = 'BufWritePre', -- uncomment for format on save
-  --   config = function()
-  --   --   require "configs.conform"
-  --     require("conform").setup({
-  --       format_on_save = {
-  --         -- These options will be passed to conform.format()
-  --         timeout_ms = 500,
-  --         lsp_fallback = true,
-  --       },
-  --   })
-  --   end,
-  -- },
-
   {
     "nvim-treesitter/nvim-treesitter",
     lazy = false,
@@ -130,7 +115,6 @@ local plugins = {
     "godlygeek/tabular",
     lazy = false,
   },
-
 } -- plugins table
 
 return plugins

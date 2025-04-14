@@ -18,3 +18,14 @@ vim.cmd([[ colorscheme retrobox ]])
 --       vim.fn.setpos(".", save_cursor)
 --     end,
 -- })
+
+local cmp = require("cmp")
+cmp.setup({
+    mapping = {
+        ["<CR>"] = cmp.config.disable,
+        ["<C-p>"] = cmp.mapping.select_prev_item(),
+        ["<C-n>"] = cmp.mapping.select_next_item(),
+        ["<C-e>"] = cmp.mapping.abort(),
+        ["<C-y>"] = cmp.mapping.confirm(),
+    }
+})
