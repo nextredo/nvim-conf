@@ -40,13 +40,14 @@ local servers = {
     "clangd",      -- Clangd for C & C++
     "html",        -- Vscode extracted lang servers
     "cssls",       -- Vscode extracted lang servers
-    "tailwindcss", -- Tailwind's intellisense (lots of web files)
+    -- "tailwindcss", -- Tailwind's intellisense (lots of web files)
+                      -- Currently does nothing, eats heaps of RAM, dies from OOM ((sensational))
     "docker_compose_language_service",
     "nginx_language_server",
     "dockerls",
     "digestif",
-    -- "pyright",
-    "basedpyright",
+    "pyright",
+    -- "basedpyright",
     "bashls",
     "nixd",
     "gdscript",
