@@ -37,6 +37,7 @@ end
 -- Look in the following link for details on setting up server configs teehee
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 local servers = {
+    "lua_ls",      -- For Lua
     "clangd",      -- Clangd for C & C++
     "html",        -- Vscode extracted lang servers
     "cssls",       -- Vscode extracted lang servers
@@ -55,6 +56,8 @@ local servers = {
     "gopls",
     "glsl_analyzer",
     "rust_analyzer",
+    "protols",
+    "cmake",
 }
 
 -- lsps with default config
@@ -114,4 +117,10 @@ lspconfig.clangd.setup {
         -- "--log=verbose",
     },
     single_file_support = true,
+}
+
+lspconfig.lua_ls.setup {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
 }

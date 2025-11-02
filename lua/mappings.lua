@@ -80,6 +80,8 @@ map("n", "<leader>dv",
 
 map("n", "<leader>bc", "<Cmd>Bclose<CR>")
 
+-- Code actions done through the "gra" key sequence
+
 -- From NvChad mappings.lua
 map("n", "<leader>k", function()
   require("nvchad.tabufline").next()
