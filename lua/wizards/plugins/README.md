@@ -9,6 +9,7 @@
 - stuff from theprimeagens stuff
   - https://github.com/Eandrju/cellular-automaton.nvim
 - spelling like LazyVim
+- Plugin for writing emojis
 
 ## Notes++
 - Eventually use `vim.pack` instead of `LazyVim`?
