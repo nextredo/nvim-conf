@@ -1,5 +1,6 @@
 local map = vim.keymap.set
 
+-- TODO make descriptions match the abbreviated word ordering of the remaps
 -- TODO mappings
 -- git
 -- trouble
@@ -29,8 +30,8 @@ map("n", "<leader>al=", [[<Cmd>Tab /=<CR>]], { desc = "Align equals" })
 
 
 -- Treesitter ------------------------------------------------------------------
-map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Installed Treesitter Parsers" })
+map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Treesitter Installed Parsers" })
 
 
 -- LSP -------------------------------------------------------------------------
-map("n", "<leader>gri", "<Cmd>LspInfo<CR>", { desc = "Check LSP" })
+map("n", "<leader>chl", "<Cmd>checkhealth vim.lsp<CR>", { desc = "Check Health LSP" })
