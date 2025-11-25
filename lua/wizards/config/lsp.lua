@@ -4,6 +4,11 @@ Information:
 - https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 --]]
 
+-- TODO enable file watching
+-- "(workspace/didChangeWatchedFiles)" disabled on all clients
+
+-- TODO notify once LSP loaded
+
 -- LSPs to enable
 local lsps = {
     "lua_ls",      -- For Lua
@@ -30,9 +35,10 @@ local lsps = {
     "cmake",
 }
 
--- lsps with default config
+-- LSPs with default config
 for _, lsp in ipairs(lsps) do
   vim.lsp.enable(lsp)
+  vim.lsp.config(lsp, {})
 end
 
 -- Custom LSP server setups ----------------------------------------------------
