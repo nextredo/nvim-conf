@@ -36,7 +36,7 @@ for _, lsp in ipairs(lsps) do
 end
 
 -- Custom LSP server setups ----------------------------------------------------
-vim.lsp.config("clangd").setup({
+vim.lsp.config("clangd", {
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,

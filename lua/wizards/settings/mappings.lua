@@ -35,3 +35,6 @@ map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Treesitter Installed
 
 -- LSP -------------------------------------------------------------------------
 map("n", "<leader>chl", "<Cmd>checkhealth vim.lsp<CR>", { desc = "Check Health LSP" })
+
+-- So I don't forget it exists
+map("n", "gro", function() end, { desc = "LSP Doc Symbol (use `gO` instead)" })
