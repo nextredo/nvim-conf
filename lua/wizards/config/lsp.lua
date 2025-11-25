@@ -9,7 +9,7 @@ Information:
 
 -- TODO notify once LSP loaded
 
--- LSPs to enable
+-- LSPs to enable --------------------------------------------------------------
 local lsps = {
     "lua_ls",      -- For Lua
     "clangd",      -- Clangd for C & C++

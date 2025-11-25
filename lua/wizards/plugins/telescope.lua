@@ -9,6 +9,9 @@ return {
       oldfiles = {
         cwd_only = true,
       },
+      colorscheme = {
+        enable_preview = true,
+      },
     },
   },
 }
