@@ -1,3 +1,5 @@
+local map = vim.keymap.set
+
 -- TODO mappings
 -- git
 -- trouble
@@ -9,14 +11,17 @@
 
 -- TODO telescope planets mapping
 
-local map = vim.keymap.set
-
----------------------------------- Telescope -----------------------------------
+-- Telescope -------------------------------------------------------------------
 
 -- TODO steal default maps from LazyVim
 -- See ./lua/lazyvim/plugins/extras/editor/telescope.lua in LazyVim
-local tele_builtin = require("telescope.builtin")
-vim.keymap.set("n", "<leader>ff", tele_builtin.find_files)
-vim.keymap.set("n", "<leader>fg", tele_builtin.live_grep)
-vim.keymap.set("n", "<leader>fb", tele_builtin.buffers)
-vim.keymap.set("n", "<leader>fh", tele_builtin.help_tags)
+local t_builtin = require("telescope.builtin")
+map("n", "<leader>ff", t_builtin.find_files, { desc = "Telescope find files" })
+map("n", "<leader>fg", t_builtin.live_grep, { desc = "Telescope live grep" })
+map("n", "<leader>fb", t_builtin.buffers, { desc = "Telescope buffers" })
+map("n", "<leader>fh", t_builtin.help_tags, { desc = "Telescope help tags" })
+
+
+-- Tabluarize ------------------------------------------------------------------
+map("n", "<leader>al,", [[<Cmd>Tab /,\zs/l0l1<CR>]], { desc = "Align commas" })
+map("n", "<leader>al=", [[<Cmd>Tab /=<CR>]], { desc = "Align equals" })
