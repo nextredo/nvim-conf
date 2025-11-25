@@ -26,3 +26,6 @@ map("n", "<leader>fh", t_builtin.help_tags, { desc = "Telescope help tags" })
 -- Tabluarize ------------------------------------------------------------------
 map("n", "<leader>al,", [[<Cmd>Tab /,\zs/l0l1<CR>]], { desc = "Align commas" })
 map("n", "<leader>al=", [[<Cmd>Tab /=<CR>]], { desc = "Align equals" })
+
+-- Treesitter
+map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Installed Treesitter Parsers" })

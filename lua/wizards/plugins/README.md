@@ -10,5 +10,8 @@
   - https://github.com/Eandrju/cellular-automaton.nvim
 - spelling like LazyVim
 
+## Notes++
+- Eventually use `vim.pack` instead of `LazyVim`?
+
 ## Other notes
 - LSP incoming/outgoing calls (like though trouble.nvim)
