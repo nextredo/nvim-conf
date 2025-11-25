@@ -31,7 +31,7 @@ local lsps = {
     "gopls",
     "glsl_analyzer",
     "rust_analyzer",
-    "protols",
+    "protols", -- Protocol buffers
     "cmake",
 }
 
@@ -41,11 +41,11 @@ for _, lsp in ipairs(lsps) do
   vim.lsp.config(lsp, {})
 end
 
+-- TODO move into lsp/ directory
+  -- then require all files in that dir from here?
 -- Custom LSP server setups ----------------------------------------------------
 vim.lsp.config("clangd", {
-    on_attach = on_attach,
-    on_init = on_init,
-    capabilities = capabilities,
+    single_file_support = true,
     cmd = {
         "clangd",
 
@@ -64,5 +64,4 @@ vim.lsp.config("clangd", {
         -- "--log=info",
         -- "--log=verbose",
     },
-    single_file_support = true,
 })
