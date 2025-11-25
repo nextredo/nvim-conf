@@ -32,7 +32,7 @@ local lsps = {
 
 -- lsps with default config
 for _, lsp in ipairs(lsps) do
-  vim.lsp.config(lsp).setup({ })
+  vim.lsp.config(lsp).enable()
 end
 
 -- Custom LSP server setups ----------------------------------------------------

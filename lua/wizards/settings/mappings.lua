@@ -27,5 +27,10 @@ map("n", "<leader>fh", t_builtin.help_tags, { desc = "Telescope help tags" })
 map("n", "<leader>al,", [[<Cmd>Tab /,\zs/l0l1<CR>]], { desc = "Align commas" })
 map("n", "<leader>al=", [[<Cmd>Tab /=<CR>]], { desc = "Align equals" })
 
--- Treesitter
+
+-- Treesitter ------------------------------------------------------------------
 map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Installed Treesitter Parsers" })
+
+
+-- LSP -------------------------------------------------------------------------
+map("n", "<leader>gri", "<Cmd>LspInfo<CR>", { desc = "Check LSP" })
