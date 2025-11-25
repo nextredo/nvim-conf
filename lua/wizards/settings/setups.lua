@@ -1,0 +1,2 @@
+-- TODO shouldn't have to call this, lazy should do it
+-- require("mason").setup()

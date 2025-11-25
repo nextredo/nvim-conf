@@ -1,6 +1,11 @@
 return {
   "williamboman/mason.nvim",
+  lazy = true,
   cmd = "Mason",
+  opts = function()
+    return require("mason").setup()
+  end,
+
   --[[
   -- Old installation requirements
   opts = {

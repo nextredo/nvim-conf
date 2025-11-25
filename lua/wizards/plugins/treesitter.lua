@@ -13,6 +13,9 @@ return {
       "markdown",
       "regex",
 
+      -- lua
+      "lua", "luadoc",
+
       -- config
       "dockerfile",
       "json", "ini", "yaml",
@@ -29,7 +32,6 @@ return {
       "bash",
 
       -- embedded
-      "lua",
       "c", "cpp",
       "llvm",
       "arduino",
