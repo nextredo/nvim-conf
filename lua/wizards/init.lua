@@ -1,3 +1,3 @@
 print("wiz config")
 
-require("config.lazy")
+require("wizards.config.lazy")
