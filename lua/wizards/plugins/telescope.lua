@@ -4,12 +4,13 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" },
 
   -- TODO more settings
+  -- TODO make the <leader>sd diagnostic list a bit nicer to read
   opts = {
     -- Yoinked from NvChad's default config
     defaults = {
       layout_config = {
         horizontal = {
-          prompt_position = "top",
+          -- prompt_position = "top",
           preview_width = 0.55,
         },
         width = 0.90,

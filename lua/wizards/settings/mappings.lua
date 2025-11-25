@@ -72,4 +72,5 @@ map("n", "gro", function() end, { desc = "LSP Doc Symbol (use `gO` instead)" })
 
 
 -- Misc ------------------------------------------------------------------------
-map("n", "<leader>/", "gcc", { desc = "Toggle line comment" })
+map("n", "<leader>/", "gcc", { desc = "Toggle line comment", remap = true, silent = true })
+map("v", "<leader>/", "gc", { desc = "Toggle comment", remap = true, silent = true })
