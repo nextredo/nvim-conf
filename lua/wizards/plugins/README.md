@@ -8,6 +8,7 @@
 - a nice theme ig
 - stuff from theprimeagens stuff
   - https://github.com/Eandrju/cellular-automaton.nvim
+- spelling like LazyVim
 
 ## Other notes
 - LSP incoming/outgoing calls (like though trouble.nvim)

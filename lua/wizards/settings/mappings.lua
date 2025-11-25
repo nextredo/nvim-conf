@@ -15,6 +15,7 @@ local map = vim.keymap.set
 
 -- TODO steal default maps from LazyVim
 -- See ./lua/lazyvim/plugins/extras/editor/telescope.lua in LazyVim
+-- See ~/.local/share/nvim/lazy/NvChad/lua/nvchad/mappings.lua
 local t_builtin = require("telescope.builtin")
 map("n", "<leader>ff", t_builtin.find_files, { desc = "Telescope find files" })
 map("n", "<leader>fg", t_builtin.live_grep, { desc = "Telescope live grep" })
