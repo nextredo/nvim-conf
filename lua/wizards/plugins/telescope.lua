@@ -4,6 +4,7 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" },
 
   -- TODO more settings
+  --[[
   opts = {
     pickers = {
       oldfiles = {
@@ -11,4 +12,8 @@ return {
       },
     },
   },
+  opts = function()
+    return require("telescope").setup()
+  end,
+  --]]
 }
