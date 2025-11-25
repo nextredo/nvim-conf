@@ -4,6 +4,8 @@
 - Something that does nice file icon stuff?
 - Autocomplete stuff
 - lua snip
+- powerbar status line thing
+- a nice theme ig
 
 ## Other notes
 - LSP incoming/outgoing calls (like though trouble.nvim)
