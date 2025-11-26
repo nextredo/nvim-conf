@@ -2,7 +2,10 @@
 
 ## Goals for this config
 - Minimal, but makes nvim an IDE rather than just an editor
+  - Keeps it fast
+  - Less bloated, more stable, more maintainable
 - Change as few mappings as possible (unless they're really dumb ones)
+  - Keeps keybindings portable to standard nvim (and maybe vim/vi)
 
 ## Some TODO's
 - [ ] Make this repo not a fork
@@ -19,13 +22,14 @@
 - [ ] Floating text (end of line) for LSP diagnostics
 
 ## Fun commands
+- See [mappings.lua](./lua/wizards/settings/mappings.lua)
 - `:Tutor`
 
 ## See also
 - [this doc](./lua/plugins/README.md)
 
 ## References
-- https://github.com/ThePrimeagen/init.lua
-- https://lazy.folke.io/
+- [ThePrimeagen's nvim config](https://github.com/ThePrimeagen/init.lua)
+- [Lazy package manager](https://lazy.folke.io/)
 
 [ksnvim]: https://github.com/nvim-lua/kickstart.nvim
