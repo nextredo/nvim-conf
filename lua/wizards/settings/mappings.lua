@@ -1,3 +1,9 @@
+--[[
+Remaps inspired by the following sources:
+- Lazyvim
+- NvChad
+--]]
+
 local map = vim.keymap.set
 
 -- TODO make descriptions match the abbreviated word ordering of the remaps
@@ -18,10 +24,6 @@ local map = vim.keymap.set
 
 -- Telescope -------------------------------------------------------------------
 local t_builtin = require("telescope.builtin")
-
--- TODO steal default maps from LazyVim
--- See ~/code/experiments/LazyVim/lua/lazyvim/plugins/extras/editor/telescope.lua in LazyVim
--- See ~/.local/share/nvim/lazy/NvChad/lua/nvchad/mappings.lua
 
 -- File finders
 map("n", "<leader>ff", t_builtin.find_files, { desc = "Telescope find files" })
