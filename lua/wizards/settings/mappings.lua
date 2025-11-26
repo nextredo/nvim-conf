@@ -80,6 +80,14 @@ map("n", "<leader>chl", "<Cmd>checkhealth vim.lsp<CR>", { desc = "Check Health L
 map("n", "gro", function() end, { desc = "LSP Doc Symbol (use `gO` instead)" })
 
 
+-- Gitsigns --------------------------------------------------------------------
+map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>", { desc = "Gitsigns blame line" })
+map("n", "<leader>ph", "<Cmd>Gitsigns preview_hunk<CR>", { desc = "Gitsigns preview hunk" })
+map("n", "<leader>pi", "<Cmd>Gitsigns preview_hunk_inline<CR>", { desc = "Gitsigns preview hunk inline" })
+map("n", "<leader>rh", "<Cmd>Gitsigns reset_hunk<CR>", { desc = "Gitsigns reset hunk" })
+map("n", "<leader>fh", "<Cmd>Gitsigns next_hunk<CR>", { desc = "Gitsigns next hunk" })
+map("n", "<leader>bh", "<Cmd>Gitsigns prev_hunk<CR>", { desc = "Gitsigns prev hunk" })
+
 -- Misc ------------------------------------------------------------------------
 map("n", "<leader>/", "gcc", { desc = "Toggle line comment", remap = true, silent = true })
 map("v", "<leader>/", "gc", { desc = "Toggle comment", remap = true, silent = true })
