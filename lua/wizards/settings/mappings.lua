@@ -51,6 +51,7 @@ end, { desc = "Telescope usage" })
 map("n", "<leader>fh", t_builtin.help_tags, { desc = "Telescope help tags" })
 map("n", "<leader>cs", t_builtin.colorscheme, { desc = "Telescope colorscheme" })
 map("n", "<leader>hl", t_builtin.highlights, { desc = "Telescope highlights" })
+map("n", "<leader>km", t_builtin.keymaps, { desc = "Telescope keymaps" })
 
 
 -- Tabluarize ------------------------------------------------------------------
@@ -64,6 +65,8 @@ map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Treesitter Installed
 
 -- LSP -------------------------------------------------------------------------
 map("n", "<leader>chl", "<Cmd>checkhealth vim.lsp<CR>", { desc = "Check Health LSP" })
+map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 
 -- So I don't forget it exists
 map("n", "gro", function() end, { desc = "LSP Doc Symbol (use `gO` instead)" })

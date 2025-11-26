@@ -24,6 +24,11 @@
 ## Fun commands
 - See [mappings.lua](./lua/wizards/settings/mappings.lua)
 - `:Tutor`
+- `:map`
+
+## Helpful keybinds
+- `CTRL-S` (insert mode)
+  - LSP signature help
 
 ## See also
 - [this doc](./lua/plugins/README.md)
