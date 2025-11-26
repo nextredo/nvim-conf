@@ -4,11 +4,6 @@ Information:
 - https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 --]]
 
--- TODO enable file watching
--- "(workspace/didChangeWatchedFiles)" disabled on all clients
-
--- TODO notify once LSP loaded
-
 -- LSPs to enable --------------------------------------------------------------
 local lsps = {
     "lua_ls",      -- For Lua
@@ -21,9 +16,9 @@ local lsps = {
     "nginx_language_server",
     "dockerls",
     "digestif",
-    "pyright",
-    -- TODO use based pyright instead
-    -- "basedpyright",
+    -- "pyright",
+    -- based pyright is better: https://docs.basedpyright.com/latest/
+    "basedpyright",
     "bashls",
     "nixd",
     "gdscript",

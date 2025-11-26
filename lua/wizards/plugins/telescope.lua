@@ -3,7 +3,6 @@ return {
   lazy = false,
   dependencies = { "nvim-lua/plenary.nvim" },
 
-  -- TODO make the <leader>sd diagnostic list a bit nicer to read
   opts = {
     -- Yoinked from NvChad's default config
     defaults = {
@@ -23,6 +22,9 @@ return {
       colorscheme = {
         enable_preview = true,
       },
+
+      -- Making the diagnostics list (:Telescope diagnostics) nicer to read
+      -- Stops the diagnostics sentence being cut off, ensures you can read it
       diagnostics = {
         -- wrap_results = true,
         line_width='full',

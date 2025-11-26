@@ -39,9 +39,9 @@ require("lazy").setup({
     notify = false,
   },
 
-  -- TODO change notification settings
+  -- Check for plugin file updates
   change_detection = {
-    enabled = true,
-    notify = true,
+    enabled = false,
+    notify = false,
   },
 })

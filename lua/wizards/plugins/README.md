@@ -5,11 +5,15 @@
 - Autocomplete stuff
 - lua snip
 - powerbar status line thing
+  - Display LSP status (loaded, loading etc.)
 - a nice theme ig
 - stuff from theprimeagens stuff
   - https://github.com/Eandrju/cellular-automaton.nvim
 - spelling like LazyVim
 - Plugin for writing emojis
+- Ideas from other neovim distributions: SpaceVim, LunarVim, NvChad
+  - Comment finder (for things like `TODO` or `FIXME`)
+  - File tree I guess
 
 ## Notes++
 - Eventually use `vim.pack` instead of `LazyVim`?
