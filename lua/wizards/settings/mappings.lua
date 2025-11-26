@@ -2,22 +2,15 @@
 Remaps inspired by the following sources:
 - Lazyvim
 - NvChad
+
+Note for mapping:
+Descriptions should match the abbreviated word ordering of the remaps
+e.g. `<leader>gs` stands for Go to symbol
 --]]
 
 local map = vim.keymap.set
 
--- TODO make descriptions match the abbreviated word ordering of the remaps
--- TODO mappings
--- git
--- trouble
--- telescope
--- general usability from ~/.local/share/nvim/lazy/NvChad/lua/nvchad/mappings.lua
 
--- TODO split vim config into an options file, mappings file and main file
--- then require them individually in this nvim config
-
--- TODO telescope planets mapping
--- TODO fix lua lsp not fuckin doing anything
 -- TODO autocomplete again pls
 -- TODO spellcheck pls
 -- TODO deselect current search on esc
@@ -32,7 +25,7 @@ map("n", "<leader>fo", t_builtin.oldfiles, { desc = "Telescope oldfiles" })
 map("n", "<leader>fg", t_builtin.live_grep, { desc = "Telescope live grep" })
 
 -- Other finders
--- map("n", "<leader>fb", t_builtin.buffers, { desc = "Telescope buffers" })
+map("n", "<leader>fb", t_builtin.buffers, { desc = "Telescope buffers" })
 
 -- Historical
 map("n", "<leader>s/", t_builtin.search_history, { desc = "Telescope search history" })
