@@ -42,7 +42,6 @@ map("n", "<leader>gr", t_builtin.git_stash, { desc = "Telescope git stash" })
 
 -- Other
 -- Telescope planet mappings (see :help telescope.builtin.planets)
--- map("n", "<leader>pl", t_builtin.planets, { desc = "Telescope usage" })
 map("n", "<leader>pl", function()
   require("telescope.builtin").planets({
     show_moon = true, show_pluto = true
@@ -77,6 +76,12 @@ map("n", "<leader>pi", "<Cmd>Gitsigns preview_hunk_inline<CR>", { desc = "Gitsig
 map("n", "<leader>rh", "<Cmd>Gitsigns reset_hunk<CR>", { desc = "Gitsigns reset hunk" })
 map("n", "<leader>fh", "<Cmd>Gitsigns next_hunk<CR>", { desc = "Gitsigns next hunk" })
 map("n", "<leader>bh", "<Cmd>Gitsigns prev_hunk<CR>", { desc = "Gitsigns prev hunk" })
+
+
+-- Memes ------------------------------------------------------------------------
+map("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>", { desc = "fml" })
+map("n", "<leader>lmao", "<cmd>CellularAutomaton game_of_life<CR>", { desc = "lmao" })
+
 
 -- Misc ------------------------------------------------------------------------
 map("n", "<leader>/", "gcc", { desc = "Toggle line comment", remap = true, silent = true })

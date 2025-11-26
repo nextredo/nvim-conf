@@ -3,7 +3,6 @@
 ## More TODOs
 ### Possible future plugins to add
 - <https://github.com/folke/zen-mode.nvim>
-- <https://github.com/Eandrju/cellular-automaton.nvim>
 - <https://github.com/j-hui/fidget.nvim>
 - <https://github.com/Th3Whit3Wolf/one-nvim>
 - Something that does nice file icon stuff
