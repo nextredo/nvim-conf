@@ -1,8 +1,5 @@
 # NVIM Config
 
-TODO reintroduce autocomplete again
-TODO turn on neovim news.txt
-
 ## Goals for this config
 - Minimal, but makes nvim an IDE rather than just an editor
 - Change as few mappings as possible (unless they're really dumb ones)
@@ -14,6 +11,8 @@ TODO turn on neovim news.txt
 - [ ] Deselect current search on esc
 - [ ] Stuff in [`plugins/README.md`](./lua/wizards/plugins/README.md)
 - [ ] Readup on [kickstart.nvim][ksnvim], steal ideas from it?
+- [ ] Show nvim `news.txt` on startup when necessary
+- [ ] Splash screen with ascii art on startup
 
 ### Low priority
 - [ ] Move LSP custom configs into the `lsp/` directory
