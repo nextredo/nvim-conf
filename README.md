@@ -13,6 +13,7 @@ TODO turn on neovim news.txt
 - [ ] Spellcheck pls
 - [ ] Deselect current search on esc
 - [ ] Stuff in [`plugins/README.md`](./lua/wizards/plugins/README.md)
+- [ ] Readup on [kickstart.nvim][ksnvim], steal ideas from it?
 
 ### Low priority
 - [ ] Move LSP custom configs into the `lsp/` directory
@@ -27,3 +28,5 @@ TODO turn on neovim news.txt
 ## References
 - https://github.com/ThePrimeagen/init.lua
 - https://lazy.folke.io/
+
+[ksnvim]: https://github.com/nvim-lua/kickstart.nvim

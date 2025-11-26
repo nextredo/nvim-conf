@@ -38,6 +38,7 @@ map("n", "<leader>gS", t_builtin.lsp_dynamic_workspace_symbols, { desc = "Telesc
 
 -- Gitcore
 map("n", "<leader>gt", t_builtin.git_status, { desc = "Telescope Git status" })
+map("n", "<leader>gr", t_builtin.git_stash, { desc = "Telescope git stash" })
 
 -- Other
 -- Telescope planet mappings (see :help telescope.builtin.planets)
