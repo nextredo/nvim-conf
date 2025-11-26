@@ -117,32 +117,15 @@ vim.lsp.config('lua_ls', {
     })
   end,
   settings = {
-    -- Lua = {}
+    Lua = {
+      codeLens = {
+        -- vscode thing, doesn't do anything for nvim afaik
+        enable = true,
+      },
+      hint = {
+        -- hover tooltips on
+        enable = true,
+      },
+    },
   }
 })
-
--- vim.lsp.config("lua_ls", {
---   runtime = {
---     -- Tell the language server which version of Lua you're using (most
---     -- likely LuaJIT in the case of Neovim)
---     version = 'LuaJIT',
---     -- Tell the language server how to find Lua modules same way as Neovim
---     -- (see `:h lua-module-load`)
---     path = {
---       'lua/?.lua',
---       'lua/?/init.lua',
---     },
---   },
---   Lua = {
---     codeLens = {
---       enable = true
---     },
---     hint = {
---       enable = true,
---       semicolon = "Disable"
---     },
---     -- diagnostics = {
---     --     globals = { 'vim' }
---     -- },
---   },
--- })
