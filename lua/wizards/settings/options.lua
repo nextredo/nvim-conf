@@ -14,7 +14,6 @@ vim.cmd([[colorscheme retrobox]])
 -- TODO turn on neovim news.txt
 -- TODO make // TODO comments warnings in the LSPs?
 -- TODO floating text at end of line for clang and other LSP diagnostics
--- TODO fix Lua LSP
 
 
 -- LSP setup -------------------------------------------------------------------
