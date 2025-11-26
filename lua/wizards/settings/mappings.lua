@@ -11,10 +11,6 @@ e.g. `<leader>gs` stands for Go to symbol
 local map = vim.keymap.set
 
 
--- TODO autocomplete again pls
--- TODO spellcheck pls
--- TODO deselect current search on esc
-
 -- Telescope -------------------------------------------------------------------
 local t_builtin = require("telescope.builtin")
 

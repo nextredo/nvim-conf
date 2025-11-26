@@ -1,22 +1,20 @@
-# Possible future plugins to add
-- https://github.com/folke/zen-mode.nvim
-- GitSigns instead of fugitive?
-- Something that does nice file icon stuff?
-- Autocomplete stuff
-- lua snip
-- powerbar status line thing
+# Plugins
+
+## More TODOs
+### Possible future plugins to add
+- <https://github.com/folke/zen-mode.nvim>
+- <https://github.com/Eandrju/cellular-automaton.nvim>
+- Something that does nice file icon stuff
+- Lua snip
+- Powerbar status line thing
   - Display LSP status (loaded, loading etc.)
-- a nice theme ig
-- stuff from theprimeagens stuff
-  - https://github.com/Eandrju/cellular-automaton.nvim
-- spelling like LazyVim
+- A nice theme
+- Stuff from theprimeagen's stuff
+- Spellcheck like LazyVim
 - Plugin for writing emojis
 - Ideas from other neovim distributions: SpaceVim, LunarVim, NvChad
   - Comment finder (for things like `TODO` or `FIXME`)
   - File tree I guess
 
-## Notes++
+### Notes++
 - Eventually use `vim.pack` instead of `LazyVim`?
-
-## Other notes
-- LSP incoming/outgoing calls (like though trouble.nvim)

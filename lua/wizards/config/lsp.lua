@@ -36,8 +36,6 @@ for _, lsp in ipairs(lsps) do
   vim.lsp.config(lsp, {})
 end
 
--- TODO move into lsp/ directory
-  -- then require all files in that dir from here?
 --------------------------------------------------------------------------------
 -- Custom LSP server setups ----------------------------------------------------
 -- Clangd ----------------------------------------------------------------------

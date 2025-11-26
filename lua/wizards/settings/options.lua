@@ -9,9 +9,6 @@ vim.cmd([[colorscheme retrobox]])
 -- vim.cmd([[colorscheme habamax]])
 -- vim.cmd([[colorscheme unokai]])
 
--- TODO turn on neovim news.txt
--- TODO floating text at end of line for clang and other LSP diagnostics
-
 -- LSP setup -------------------------------------------------------------------
 vim.diagnostic.config({
   virtual_text = false,
