@@ -18,6 +18,9 @@ TODO turn on neovim news.txt
 - [ ] Move LSP custom configs into the `lsp/` directory
 - [ ] Floating text (end of line) for LSP diagnostics
 
+## Fun commands
+- `:Tutor`
+
 ## See also
 - [this doc](./lua/plugins/README.md)
 

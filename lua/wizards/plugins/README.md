@@ -5,7 +5,7 @@
 - <https://github.com/folke/zen-mode.nvim>
 - <https://github.com/Eandrju/cellular-automaton.nvim>
 - Something that does nice file icon stuff
-- Lua snip
+- LuaSnip (ties in well with nvim cmp)
 - Powerbar status line thing
   - Display LSP status (loaded, loading etc.)
 - A nice theme
