@@ -51,7 +51,14 @@ map("n", "<leader>gS", t_builtin.lsp_dynamic_workspace_symbols, { desc = "Telesc
 map("n", "<leader>gt", t_builtin.git_status, { desc = "Telescope Git status" })
 
 -- Other
-map("n", "<leader>pl", t_builtin.planets, { desc = "Telescope usage" })
+-- Telescope planet mappings (see :help telescope.builtin.planets)
+-- map("n", "<leader>pl", t_builtin.planets, { desc = "Telescope usage" })
+map("n", "<leader>pl", function()
+  require("telescope.builtin").planets({
+    show_moon = true, show_pluto = true
+  })
+end, { desc = "Telescope usage" })
+
 map("n", "<leader>fh", t_builtin.help_tags, { desc = "Telescope help tags" })
 map("n", "<leader>cs", t_builtin.colorscheme, { desc = "Telescope colorscheme" })
 map("n", "<leader>hl", t_builtin.highlights, { desc = "Telescope highlights" })
