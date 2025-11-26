@@ -2,6 +2,7 @@
 
 ## Some To Do's
 - Make this repo not a fork
+- Eventually be able to open the files from `:Telescope planets` in their full glory
 
 ## See also
 - [this doc](./lua/plugins/README.md)
