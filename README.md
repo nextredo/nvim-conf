@@ -16,6 +16,7 @@
 - [ ] Readup on [kickstart.nvim][ksnvim], steal ideas from it?
 - [ ] Show nvim `news.txt` on startup when necessary
 - [ ] Splash screen with ascii art on startup
+- [ ] Doxygen highlighting in C++
 
 ### Low priority
 - [ ] Move LSP custom configs into the `lsp/` directory

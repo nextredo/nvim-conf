@@ -25,13 +25,13 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- Import your plugins
-    -- (from ~/.config/nvim/lua/plugins/)
+    -- (from ~/.config/nvim/lua/<dirpath>)
     { import = "wizards.plugins" },
   },
 
   -- Configure any other settings here. See the documentation for more details.
   -- Colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  -- install = { colorscheme = { "habamax" } },
 
   -- Check for plugin updates
   checker = {

@@ -68,11 +68,16 @@ map("n", "<leader>chl", "<Cmd>checkhealth vim.lsp<CR>", { desc = "Check Health L
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 
+map("n", "<leader>dk",
+    function() vim.diagnostic.open_float(); end,
+    { desc = "Open floating diagnostics" }
+)
+
 -- So I don't forget it exists
 map("n", "gro", function() end, { desc = "LSP Doc Symbol (use `gO` instead)" })
 
 -- For C/C++ only
-map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>", { desc = "Switch source/header file" })
+map("n", "<leader>sw", "<Cmd>LspClangdSwitchSourceHeader<CR>", { desc = "Switch source/header file" })
 
 -- Gitsigns --------------------------------------------------------------------
 map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>", { desc = "Gitsigns blame line" })
