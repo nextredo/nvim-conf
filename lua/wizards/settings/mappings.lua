@@ -16,9 +16,13 @@ local t_builtin = require("telescope.builtin")
 
 -- File finders
 map("n", "<leader>ff", t_builtin.find_files, { desc = "Telescope find files" })
-map("n", "<leader>gf", t_builtin.git_files, { desc = "Telescope git files (excl. gitignore'd files)" })
 map("n", "<leader>fo", t_builtin.oldfiles, { desc = "Telescope oldfiles" })
 map("n", "<leader>fg", t_builtin.live_grep, { desc = "Telescope live grep" })
+
+-- map("n", "<leader>gf", t_builtin.git_files, { desc = "Telescope git files (excl. gitignore'd files)" })
+map("n", "<leader>gf", function()
+    t_builtin.git_files({ no_ignore = true })
+end, { desc = "Telescope git files (incl. .gitignore'd files)" })
 
 -- Other finders
 map("n", "<leader>fb", t_builtin.buffers, { desc = "Telescope buffers" })
