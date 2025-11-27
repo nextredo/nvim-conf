@@ -6,9 +6,9 @@ return {
   opts = {
     -- Yoinked from NvChad's default config
     defaults = {
+      layout_strategy = "flex",
       layout_config = {
         horizontal = {
-          -- prompt_position = "top",
           preview_width = 0.55,
         },
         width = 0.90,
@@ -27,7 +27,7 @@ return {
       -- Stops the diagnostics sentence being cut off, ensures you can read it
       diagnostics = {
         -- wrap_results = true,
-        line_width='full',
+        line_width = "full",
         layout_config = {
           horizontal = {
             preview_width = 0.40,
