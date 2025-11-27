@@ -12,6 +12,7 @@
 - [ ] Investigate using a different distro
   - Tried NvChad, now try others
   - LunarVim, LazyVim
+  - [kickstart.nvim][ksnvim]
   - SpaceVim? Not maintained anymore afaik
   - See [popular configs here](https://dotfyle.com/neovim/configurations/top)
 
@@ -21,7 +22,6 @@
 - [ ] Spellcheck pls
 - [ ] Deselect current search on esc
 - [ ] Stuff in [`plugins/README.md`](./lua/wizards/plugins/README.md)
-- [ ] Readup on [kickstart.nvim][ksnvim], steal ideas from it?
 - [ ] Show nvim `news.txt` on startup when necessary
 - [ ] Splash screen with ascii art on startup
 - [ ] Doxygen highlighting in C++
