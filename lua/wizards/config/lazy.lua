@@ -27,6 +27,7 @@ require("lazy").setup({
     -- Import your plugins
     -- (from ~/.config/nvim/lua/<dirpath>)
     { import = "wizards.plugins" },
+    { import = "wizards.plugins.themes" },
   },
 
   -- Configure any other settings here. See the documentation for more details.

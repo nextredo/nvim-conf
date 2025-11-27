@@ -1,12 +1,20 @@
 -- Steal basic settings from vimrc
 vim.cmd("source ~/.vimrc")
 
--- Override colorscheme from vimrc
-vim.opt.termguicolors = true
-vim.cmd([[colorscheme retrobox]])
-
 -- Other colour schemes
+-- Colour themes - stock
+-- Good
+vim.cmd([[colorscheme retrobox]])
 -- vim.cmd([[colorscheme habamax]])
+-- Eh
+-- vim.cmd([[colorscheme desert]])
+
+-- Colour themes - extensions
+-- Good
+-- vim.cmd([[colorscheme synthweave]])
+-- vim.cmd([[colorscheme carbonfox]])
+-- Eh
+-- vim.cmd([[colorscheme onedark]])
 -- vim.cmd([[colorscheme unokai]])
 
 -- LSP setup -------------------------------------------------------------------
