@@ -71,6 +71,8 @@ map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
 -- So I don't forget it exists
 map("n", "gro", function() end, { desc = "LSP Doc Symbol (use `gO` instead)" })
 
+-- For C/C++ only
+map("n", "<leader>sw", "<Cmd>ClangdSwitchSourceHeader<CR>", { desc = "Switch source/header file" })
 
 -- Gitsigns --------------------------------------------------------------------
 map("n", "<leader>gb", "<Cmd>Gitsigns blame_line<CR>", { desc = "Gitsigns blame line" })
