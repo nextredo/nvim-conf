@@ -8,6 +8,14 @@
   - Keeps keybindings portable to standard nvim (and maybe vim/vi)
 
 ## Some TODO's
+## High priority
+- [ ] Investigate using a different distro
+  - Tried NvChad, now try others
+  - LunarVim, LazyVim
+  - SpaceVim? Not maintained anymore afaik
+  - See [popular configs here](https://dotfyle.com/neovim/configurations/top)
+
+## Med priority
 - [ ] Make this repo not a fork
 - [ ] Eventually be able to open the files from `:Telescope planets` in their full glory
 - [ ] Spellcheck pls

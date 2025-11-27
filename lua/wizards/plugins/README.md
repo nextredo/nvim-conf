@@ -14,9 +14,6 @@
 - Stuff from theprimeagen's stuff
 - Spellcheck like LazyVim
 - Plugin for writing emojis
-- Ideas from other neovim distributions: SpaceVim, LunarVim, NvChad
-  - Comment finder (for things like `TODO` or `FIXME`)
-  - File tree I guess
 
 ### Notes++
 - Eventually use `vim.pack` instead of `LazyVim`?
