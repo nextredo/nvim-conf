@@ -22,3 +22,6 @@ vim.diagnostic.config({
   virtual_text = false,
   virtual_lines = { current_line = true },
 })
+
+-- Other -----------------------------------------------------------------------
+vim.o.winborder = "shadow" -- Peak retro aesthetic
