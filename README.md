@@ -16,6 +16,10 @@
   - Just spin up old nvchad config, see how it behaves with the LSP
   - Less priority on random text, needs to lock in a bit harder on locals etc.
   - Icons don't differentiate it super well to be honest
+- [ ] Can't search via telescope correctly
+  - Files not in the index can't be found via <leader>fg
+  - Also can't be found in <leader>ff
+- [ ] Add syntax highliting (and LSP??) to markdown code blocks
 
 ### Med priority
 - [ ] Investigate using a different distro
