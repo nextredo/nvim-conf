@@ -1,7 +1,10 @@
 --[[
 Remaps inspired by the following sources:
 - Lazyvim
+  - https://www.lazyvim.org/keymaps
+  - https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 - NvChad
+  - https://nvchad.com/docs/config/mappings/
 
 Note for mapping:
 Descriptions should match the abbreviated word ordering of the remaps
@@ -38,6 +41,7 @@ map("n", "<leader>gi", t_builtin.lsp_incoming_calls, { desc = "Telescope LSP inc
 map("n", "<leader>go", t_builtin.lsp_outgoing_calls, { desc = "Telescope LSP outgoing calls" })
 map("n", "<leader>gs", t_builtin.lsp_workspace_symbols, { desc = "Telescope LSP WS Syms" })
 map("n", "<leader>gS", t_builtin.lsp_dynamic_workspace_symbols, { desc = "Telescope Dyn LSP WS Syms" })
+
 -- map("n", "<leader>", t_builtin.spell_suggest, { desc = "Telescope spell suggest" })
 
 -- Gitcore
@@ -71,6 +75,11 @@ map("n", "<leader>tsi", "<Cmd>TSInstallInfo<CR>", { desc = "Treesitter Installed
 map("n", "<leader>chl", "<Cmd>checkhealth vim.lsp<CR>", { desc = "Check Health LSP" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 map("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+
+map("n", "<leader>ud",
+    function() vim.diagnostic.enable(not vim.diagnostic.is_enabled()); end,
+    { desc = "Toggle LSP" }
+)
 
 map("n", "<leader>dk",
     function() vim.diagnostic.open_float(); end,
