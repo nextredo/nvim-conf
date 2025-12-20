@@ -25,3 +25,4 @@ vim.diagnostic.config({
 
 -- Other -----------------------------------------------------------------------
 vim.o.winborder = "shadow" -- Peak retro aesthetic
+vim.o.wrap = false
